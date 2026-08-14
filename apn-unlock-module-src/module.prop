@@ -1,0 +1,6 @@
+id=rakuten_big_s_apn_unlock
+name=Rakuten BIG s APN Edit Unlock
+version=2.0.0
+versionCode=20000
+author=local
+description=Shell-only Binder override for the verified Rakuten BIG s Android 10 ROM; enables APN creation without changing the APN database.
