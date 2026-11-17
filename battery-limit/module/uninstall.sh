@@ -2,6 +2,7 @@
 
 STATE_DIR=/data/adb/3917jr_battery_limit
 SWITCH=/sys/class/power_supply/battery/battery_charging_enabled
+INPUT=/sys/class/power_supply/battery/input_suspend
 if [ -f "$STATE_DIR/service.pid" ]; then
     pid=$(cat "$STATE_DIR/service.pid")
     case "$pid" in
@@ -9,5 +10,6 @@ if [ -f "$STATE_DIR/service.pid" ]; then
         *) kill "$pid" 2>/dev/null ;;
     esac
 fi
+printf '0\n' > "$INPUT" 2>/dev/null
 printf '1\n' > "$SWITCH" 2>/dev/null
 rm -rf "$STATE_DIR"
