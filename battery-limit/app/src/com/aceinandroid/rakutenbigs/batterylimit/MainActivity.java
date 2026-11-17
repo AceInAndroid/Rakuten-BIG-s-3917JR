@@ -98,6 +98,7 @@ public class MainActivity extends Activity {
         limitSlider.setMax(LIMITS.length - 1);
         limitSlider.setProgress(LIMITS.length - 1);
         limitSlider.setMinHeight(dp(48));
+        limitSlider.setPadding(dp(24), 0, dp(24), 0);
         limitSlider.setProgressTintList(ColorStateList.valueOf(ACCENT));
         limitSlider.setProgressBackgroundTintList(ColorStateList.valueOf(Color.rgb(222, 226, 226)));
         GradientDrawable thumb = rounded(Color.WHITE, 18);
@@ -181,7 +182,9 @@ public class MainActivity extends Activity {
         startNow = new Button(this);
         startNow.setText("立即开始");
         startNow.setTextColor(Color.WHITE);
-        startNow.setBackgroundTintList(ColorStateList.valueOf(ACCENT));
+        startNow.setBackgroundTintList(new ColorStateList(
+                new int[][] {new int[] {android.R.attr.state_enabled}, new int[] {}},
+                new int[] {ACCENT, Color.rgb(179, 188, 190)}));
         LinearLayout.LayoutParams startParams = new LinearLayout.LayoutParams(-1, dp(52));
         startParams.topMargin = dp(22);
         page.addView(startNow, startParams);
