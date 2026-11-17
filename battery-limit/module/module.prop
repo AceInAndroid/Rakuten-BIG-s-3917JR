@@ -1,0 +1,6 @@
+id=rakuten_big_s_battery_limit
+name=Rakuten BIG s Battery Charge Limit
+version=1.0.0
+versionCode=10000
+author=AceInAndroid
+description=Charge limit controller for verified 3917JR Android 10 firmware.

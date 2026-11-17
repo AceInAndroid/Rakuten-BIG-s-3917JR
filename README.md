@@ -8,6 +8,7 @@
 
 - [提取原厂 boot、安装 Magisk 和恢复 APN](docs/ROOT_AND_APN_ZH.md)
 - [APN Magisk 模块说明及源码](apn-unlock-module-src/README.md)
+- [充电上限 App 和 Magisk 模块](battery-limit/README.md)
 - [文件 SHA-256](SHA256SUMS)
 
 ## 文件
@@ -16,6 +17,8 @@
 | --- | --- |
 | [`boot_a-stock.img`](boot_a-stock.img) | 当前固件的原厂 `boot_a`，可作为回退备份 |
 | [`rakuten-big-s-apn-unlock.zip`](apn-unlock-module-src/rakuten-big-s-apn-unlock.zip) | APN 运行时覆盖模块，源码在同一目录 |
+| [`3917jr-battery-limit-magisk.zip`](battery-limit/dist/3917jr-battery-limit-magisk.zip) | 六档充电上限的 Magisk 开机服务 |
+| [`3917jr-battery-limit.apk`](battery-limit/dist/3917jr-battery-limit.apk) | 在手机上选择和应用充电上限 |
 | [Magisk 修补 boot（Release 附件）](https://github.com/AceInAndroid/Rakuten-BIG-s-3917JR/releases/tag/v2026.11.16-root-apn) | 本机实测可临时启动并刷入的 Magisk 31.1 boot；仅适用于相同固件和已解锁 Bootloader |
 
 Magisk APK 和 phhusson GSI 请从教程中的官方上游地址获取。临时 GSI
